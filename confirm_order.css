@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff0f5; /* light candy pink */
+  color: #4a148c; /* deep purple text */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+.order-confirmation {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.order-confirmation h2 {
+  text-align: center;
+  color: #6a1b9a; /* royal purple */
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.order-confirmation h3 {
+  margin-top: 40px;
+  text-align: center;
+  color: #8e24aa; /* lavender purple */
+  font-size: 22px;
+}
+
+/* Paragraphs */
+.order-confirmation p {
+  font-size: 16px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+/* Items List */
+ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+li {
+  background-color: #f8c8dc; /* tea pink */
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Total Price */
+.total {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #681a98; /* deep purple */
+  margin-top: 30px;
+}
+
+/* Button */
+form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button[type="submit"] {
+  background-color: #aed581; /* pastel green */
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #9ccc65; /* slightly darker pastel green */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .order-confirmation {
+    padding: 30px 20px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}

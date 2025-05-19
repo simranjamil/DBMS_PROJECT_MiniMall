@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  font-family: sans-serif;
+  background-color: #fbf7f8; /* light pink */
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Left panel with emoji */
+.left-panel {
+  width: 40%;
+  background-color: #f8c8dc; /* tea pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #e4b3cb;
+}
+
+.cart-emoji {
+  font-size: 220px;
+  opacity: 0.92;
+  color: #681a98; /* bold purple */
+}
+
+/* Right panel with cart details */
+.right-panel {
+  width: 60%;
+  background-color: #fff;
+  padding: 40px 50px;
+  overflow-y: auto;
+}
+
+/* Headline */
+h2 {
+  text-align: center;
+  color: #4a148c; /* rich purple */
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Cart item list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  background-color: #fce4ec; /* soft candy pink */
+  padding: 14px 20px;
+  border: 2px solid #f8bbd0; /* bubblegum border */
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #3e2824;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Total display */
+.total {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #77b03a; /* soft green for total */
+  margin-top: 25px;
+}
+
+/* Checkout button */
+form {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.remove-button {
+  background-color: #ffb6c1; /* light pink */
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #ff7ca8; /* darker pink on hover */
+}
+.button[type="submit"] {
+  padding: 14px 28px;
+  background-color: #77b03a; /* minty green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button[type="submit"]:hover {
+  background-color: #8ed245; /* slightly darker mint */
+}
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    border: none;
+  }
+
+  .cart-emoji {
+    font-size: 160px;
+    margin: 20px 0;
+  }
+
+  .right-panel {
+    padding: 30px 20px;
+  }
+}

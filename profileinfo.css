@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full page height */
+}
+h3 {
+  color: #32115b;
+  font-size: 30px;
+}
+p {
+  font-family: sans-serif;
+  color: rgb(62, 4, 100);
+}
+.profile {
+  background-color: #bef3fa;
+  width: 30%;
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center within its column */
+}
+
+.fa-icon {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Solid icon */
+  font-size: 180px;
+  color: rgb(141, 94, 186);
+}
+
+.sidebar {
+  width: 70%;
+  padding: 30px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #e0d5ea;
+}
+button[type="submit"] {
+  margin-top: 60px;
+  background-color: #aed581; /* pastel green */
+  color: white;
+  padding: 12px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #9ccc65; /* slightly darker pastel green */
+}

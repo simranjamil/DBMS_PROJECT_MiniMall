@@ -1,0 +1,218 @@
+/* Princess Theme Landing Page for MiniMall */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: url("frontIMG/page.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner {
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.line1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #d63384; /* Pink text */
+  margin: 0;
+  text-transform: capitalize;
+  background-color: rgb(
+    233,
+    223,
+    225
+  ); /* Light pink background with transparency */
+  border-radius: 45px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.line2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #e63946;
+  margin: 10px 0 0 0;
+  text-transform: capitalize;
+  background-color: rgb(
+    233,
+    223,
+    225
+  ); /* Light pink background with transparency */
+  border-radius: 45px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.scroll-down {
+  text-align: center;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-down a {
+  text-decoration: none;
+  color: #d63384;
+  font-size: 40px;
+  animation: bounce 2s infinite;
+  display: inline-block;
+  transition: color 0.3s;
+  width: 50px;
+  background-color: #f8c8dc;
+}
+
+.scroll-down a:hover {
+  color: #e63946;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff0f5;
+  color: #4e342e;
+}
+
+header {
+  background-color: #f8c8dc;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e4b3cb;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #4a0072;
+}
+
+.btn-header {
+  background-color: #aed581;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-header:hover {
+  background-color: #9ccc65;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* This pulls text to top */
+  padding: 50px;
+  gap: 40px;
+  padding-bottom: 0px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: "Dancing Script", cursive;
+}
+
+.hero-text p {
+  font-size: 23px;
+  color: #473636;
+  margin-bottom: 90px;
+}
+
+.hero-buttons a {
+  padding: 14px 28px;
+  margin-right: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-text {
+  max-width: 45%;
+  margin-top: 30px;
+}
+.btn-primary {
+  background-color: #f48fb1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #f06292;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #6a1b9a;
+  border: 2px solid #6a1b9a;
+}
+
+.btn-secondary:hover {
+  background-color: #fce4ec;
+}
+
+/* Hero Images */
+.hero-images {
+  position: relative;
+  width: 700px;
+  height: 600px;
+}
+
+.hero-images img {
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.img-top {
+  top: 0;
+  right: 50px;
+  width: 350px;
+}
+
+.img-middle {
+  top: 150px;
+  left: -90;
+  width: 400px;
+}

@@ -1,0 +1,84 @@
+/* Welcome Section */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: #f8c8dc;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e4b3cb;
+}
+.logo a {
+  font-size: 34px;
+  font-weight: bold;
+  color: #6a1b9a;
+  text-decoration: none;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f7fa;
+  padding: 128px 20px;
+}
+
+.welcome-box {
+  background-color: #f3e5f5;
+  padding: 80px 40px;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.welcome h1 {
+  font-size: 50px;
+  color: #6a1b9a;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  font-size: 30px;
+  color: #5f053f;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-btn {
+  background-color: #aed581; /* soft peach */
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: #9ccc65;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+footer {
+  background-color: #d1c4e9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 17px;
+}

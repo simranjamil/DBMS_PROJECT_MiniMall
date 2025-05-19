@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #b9ffb9; /* minty green background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align from top */
+  min-height: 100vh;
+  padding: 60px 20px; /* space from top and bottom */
+}
+
+/* Form Container */
+.order-container {
+  background-color: #f8c8dc; /* tea pink */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 95%;
+  text-align: left;
+  border: 2px solid #f48fb1;
+}
+
+/* Heading */
+.order-container h2 {
+  color: #6a1b9a;
+  margin-bottom: 30px;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Labels and Inputs side by side */
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #4a148c;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Input fields and textarea */
+label input,
+label textarea {
+  width: 65%;
+  padding: 10px 12px;
+  border: 2px solid #e4b3cb;
+  border-radius: 8px;
+  background-color: #fffafc;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+label input:focus,
+label textarea:focus {
+  border-color: #d48abf;
+  box-shadow: 0 0 8px #f8bbd0;
+  outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #aed581;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 25px;
+}
+
+button[type="submit"]:hover {
+  background-color: #9ccc65;
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .order-container {
+    padding: 30px 20px;
+    width: 95%;
+  }
+
+  label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label input,
+  label textarea {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
