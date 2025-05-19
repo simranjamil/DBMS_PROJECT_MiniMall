@@ -1,6 +1,0 @@
-CREATE TABLE cartsinfo (
-    cart_id INT AUTO_INCREMENT PRIMARY KEY,
-    cart_code VARCHAR(5),
-    email VARCHAR(100),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
